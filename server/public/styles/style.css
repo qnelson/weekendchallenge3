@@ -3,7 +3,7 @@ h2, h3 {
 }
 
 #add {
-  margin-left: 41%;
+  margin-left: 40%;
 }
 
 #add, #subtract, #multiply, #divide, #clear {
@@ -15,5 +15,5 @@ margin-top: 10px;
 
 #xInput, #yInput {
   display: block;
-  margin-left: 45%;
+  margin-left: 44%;
 }

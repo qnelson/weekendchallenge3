@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  // event listeners
+
+  //Add event listener
   $('#add').on('click', function() {
     event.preventDefault();
     var values = getInputs();
@@ -13,6 +14,7 @@ $(document).ready(function() {
     });
   });
 
+  //Subtract event listener
   $('#subtract').on('click', function() {
       event.preventDefault();
       var values = getInputs();
@@ -26,6 +28,7 @@ $(document).ready(function() {
       });
     });
 
+    //Multiply event listener
     $('#multiply').on('click', function() {
         event.preventDefault();
         var values = getInputs();
@@ -39,6 +42,7 @@ $(document).ready(function() {
       });
     });
 
+    //Divide event listener
     $('#divide').on('click', function() {
         event.preventDefault();
         var values = getInputs();
@@ -52,10 +56,12 @@ $(document).ready(function() {
        });
     });
 
+  //Displays answer on the DOM
   function result(response) {
     $('#answer').html('<h3>' + response + '</h3>');
   }
 
+//Grabs values from input fields
   function getInputs() {
     var values = {};
     $.each($('#inputForm').serializeArray(), function(i, field) {
