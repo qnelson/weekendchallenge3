@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var calc = require('../routes/calculations');
+var math = require('../routes/calculations');
 
 var x;
 var y;
@@ -14,28 +14,28 @@ router.get('/', function(req, res) {
 router.post('/add', function(req, res) {
   x = Number(req.body.x);
   y = Number(req.body.y);
-  answer = calc.add(x, y);
+  answer = math.add(x, y);
   res.status(200).send((answer).toString());
 });
 
 router.post('/subtract', function(req, res) {
   x = Number(req.body.x);
   y = Number(req.body.y);
-  answer = calc.subtract(x, y);
+  answer = math.subtract(x, y);
   res.status(200).send((answer).toString());
 });
 
 router.post('/multiply', function(req, res) {
   x = Number(req.body.x);
   y = Number(req.body.y);
-  answer = calc.multiply(x, y);
+  answer = math.multiply(x, y);
   res.status(200).send((answer).toString());
 });
 
 router.post('/divide', function(req, res) {
   x = Number(req.body.x);
   y = Number(req.body.y);
-  answer = calc.divide(x, y);
+  answer = math.divide(x, y);
   res.status(200).send((answer).toString());
 });
 
