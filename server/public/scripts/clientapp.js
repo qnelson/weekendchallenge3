@@ -9,7 +9,7 @@ $(document).ready(function() {
       url: '/add',
       data: values,
       success: function(response) {
-        result(response);
+        result(response.answer);
       }
     });
   });
@@ -23,7 +23,7 @@ $(document).ready(function() {
       url: '/subtract',
       data: values,
       success: function(response) {
-        result(response);
+        result(response.answer);
         }
       });
     });
@@ -37,7 +37,7 @@ $(document).ready(function() {
         url: '/multiply',
         data: values,
         success: function(response) {
-          result(response);
+          result(response.answer);
         }
       });
     });
@@ -51,7 +51,7 @@ $(document).ready(function() {
          url: '/divide',
          data: values,
          success: function(response) {
-           result(response);
+           result(response.answer);
          }
        });
     });

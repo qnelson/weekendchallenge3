@@ -1,3 +1,7 @@
+body {
+  !background-color: teal;
+}
+
 h2, h3 {
   text-align: center;
 }
@@ -10,10 +14,20 @@ h2, h3 {
 font-size: 15px;
 font-weight: bold;
 width: 60px;
-margin-top: 10px;
+margin-bottom: 20px;
 }
 
-#xInput, #yInput {
+#x, #y {
   display: block;
   margin-left: 44%;
+  text-align: center;
+}
+
+#x {
+  margin-top: 30px;
+}
+
+#y {
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
