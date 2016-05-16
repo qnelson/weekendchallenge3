@@ -1,0 +1,26 @@
+{
+  "name": "weekendchallenge3",
+  "version": "1.0.0",
+  "description": "A simple calculator app built with node.js and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qnelson/weekendchallenge3.git"
+  },
+  "author": "Quinn Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qnelson/weekendchallenge3/issues"
+  },
+  "homepage": "https://github.com/qnelson/weekendchallenge3#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "jquery": "^2.2.3"
+  }
+}
